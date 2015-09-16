@@ -1,0 +1,46 @@
+﻿body {
+    font-size: .85em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    color: #232323;
+    background-color: #fff;
+    font-size:14px;
+    font-weight:normal;
+}
+
+#map {
+    height: 100%;
+}
+
+header, footer, nav, section {
+    display: block;
+}
+
+.home {
+    padding:20px;
+    background-color:#CCCCCC;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.side-filter {
+    width:25%;
+    float:left;
+    height:100%;
+    margin:12px;
+}
+
+.inline-error {
+    color:red;
+}
+
+.centralized {
+    vertical-align:middle;
+    margin:20% 0 0 0;
+}
+
+.error-image {
+    text-align:center;
+    background-color:black;
+    width:100%;
+}

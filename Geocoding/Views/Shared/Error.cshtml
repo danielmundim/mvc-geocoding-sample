@@ -1,0 +1,26 @@
+﻿@model System.Web.Mvc.HandleErrorInfo
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Error</title>
+</head>
+<body>
+    <h2>
+        There's been a glitch in the matrix...
+    </h2>
+    <div class="error-image">
+        <img src="~/Images/error.jpg" alt="error" />
+    </div>
+    <br />
+    <div class="container">
+        <p>You have two choices:</p>
+        <p>Take the <span style="color:blue">blue</span> pill and remain in the matrix, you will forget this glitch ever happenned and will return to whatever it is you were doing.</p>
+        <p>Take the <span style="color:red">red</span> pill and enlighten yourself with the truth, reporting this glitch to the nearest zion ship commander in charge.</p>
+        <br />
+        <p>Make your choice</p>
+        <a href="mailto:dmundim.cr@gmail.com?subject=Nonlinear Application Error: @Model.Exception.Message&body=The following exception occurred: @Model.Exception.InnerException" class="btn btn-danger btn-lg">Give me the red pill and let me report this glitch</a>
+        <a href="@Url.Action("Index", "Home")" class="btn btn-primary btn-lg">Give me the blue pill and return to the Home Page</a>
+    </div>
+</body>
+</html>
